@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jquery-cross2 by nxeed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Jquery-cross2</h1>
+      <h2 class="project-tagline">jQuery Before/After Plugin</h2>
+      <a href="https://github.com/nxeed/jQuery-Cross2" class="btn">View on GitHub</a>
+      <a href="https://github.com/nxeed/jQuery-Cross2/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/nxeed/jQuery-Cross2/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="jquery-cross2" class="anchor" href="#jquery-cross2" aria-hidden="true"><span class="octicon octicon-link"></span></a>JQuery Cross2</h1>
+
+<p>Just another jQuery Before/After Slider.</p>
+
+<p>The possibilities for this plugin are endless. Photographs can show the before and after differences between images, Doctors can have before and after images of patients, Modelers can show the before and after images of projects and on and on.</p>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features:</h2>
+
+<ul>
+<li>Powerful customization</li>
+<li>Mobile, IE8 supported</li>
+<li>Based on <a href="https://github.com/threedubmedia/jquery.threedubmedia/tree/master/event.drag">event.drag</a>
+</li>
+<li>Supports <a href="https://github.com/jquery/jquery-mousewheel">mousewheel</a> and <a href="https://github.com/gdsmith/jquery.easing">easing</a>
+</li>
+<li>Focusable</li>
+<li>Keyboard supported</li>
+</ul>
+
+<h2>
+<a id="basic-usage" class="anchor" href="#basic-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic Usage:</h2>
+
+<ul>
+<li>Load the needed resources in the document.</li>
+</ul>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>jquery.cross2.min.css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> /&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>jquery.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>jquery.event.drag.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+
+<span class="pl-c">&lt;!-- OPTIONAL --&gt;</span>
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://cdn.jsdelivr.net/mousewheel/3.1.9/jquery.mousewheel.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+<span class="pl-c">&lt;!-- /OPTIONAL --&gt;</span>
+
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>jquery.cross2.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<ul>
+<li>Wrap two images into a cross2 container.</li>
+</ul>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>cross2<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>imgBefore.jpg<span class="pl-pds">"</span></span> <span class="pl-e">alt</span>=<span class="pl-s"><span class="pl-pds">"</span>before<span class="pl-pds">"</span></span> /&gt;
+  &lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>imgAfter.jpg<span class="pl-pds">"</span></span> <span class="pl-e">alt</span>=<span class="pl-s"><span class="pl-pds">"</span>after<span class="pl-pds">"</span></span> /&gt;
+&lt;/<span class="pl-ent">div</span>&gt;
+<span class="pl-c">&lt;!-- OR --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>cross2<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>#<span class="pl-pds">"</span></span> <span class="pl-e">target</span>=<span class="pl-s"><span class="pl-pds">"</span>_blank<span class="pl-pds">"</span></span>&gt;&lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>imgBefore.jpg<span class="pl-pds">"</span></span> <span class="pl-e">alt</span>=<span class="pl-s"><span class="pl-pds">"</span>before<span class="pl-pds">"</span></span> /&gt;&lt;/<span class="pl-ent">a</span>&gt;
+  &lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>#<span class="pl-pds">"</span></span> <span class="pl-e">target</span>=<span class="pl-s"><span class="pl-pds">"</span>_blank<span class="pl-pds">"</span></span>&gt;&lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>imgAfter.jpg<span class="pl-pds">"</span></span> <span class="pl-e">alt</span>=<span class="pl-s"><span class="pl-pds">"</span>after<span class="pl-pds">"</span></span> /&gt;&lt;/<span class="pl-ent">a</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<ul>
+<li>Enable the plugin.</li>
+</ul>
+
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-s1">&lt;<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1">  $(<span class="pl-c1">window</span>).<span class="pl-c1">load</span>(<span class="pl-k">function</span>() {</span>
+<span class="pl-s1">    $(<span class="pl-s"><span class="pl-pds">'</span>.cross2<span class="pl-pds">'</span></span>).cross2();</span>
+<span class="pl-s1">  });</span>
+<span class="pl-s1">&lt;/<span class="pl-ent">script</span>&gt;</span></pre></div>
+
+<h2>
+<a id="default-options" class="anchor" href="#default-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Default Options:</h2>
+
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-s1">&lt;<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1">  $(<span class="pl-c1">window</span>).<span class="pl-c1">load</span>(<span class="pl-k">function</span>() {</span>
+<span class="pl-s1">    $(<span class="pl-s"><span class="pl-pds">'</span>.cross2<span class="pl-pds">'</span></span>).cross2({</span>
+<span class="pl-s1">      value<span class="pl-k">:</span> <span class="pl-c1">0.5</span>, <span class="pl-c">// initial slider offset</span></span>
+<span class="pl-s1">      vertical<span class="pl-k">:</span> <span class="pl-c1">false</span>, <span class="pl-c">// vartical orientation</span></span>
+<span class="pl-s1">      animationDuration<span class="pl-k">:</span> <span class="pl-c1">150</span>, <span class="pl-c">// animation duration</span></span>
+<span class="pl-s1">      easing<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>swing<span class="pl-pds">'</span></span>, <span class="pl-c">// extra easing function</span></span>
+<span class="pl-s1">      clickEnabled<span class="pl-k">:</span> <span class="pl-c1">false</span>, <span class="pl-c">// slide when clicks on image</span></span>
+<span class="pl-s1">      mousemoveEnabled<span class="pl-k">:</span> <span class="pl-c1">false</span>, <span class="pl-c">// slide on mouse over</span></span>
+<span class="pl-s1">      mousewheelEnabled<span class="pl-k">:</span> <span class="pl-c1">false</span>, <span class="pl-c">// mousewheel scrolling</span></span>
+<span class="pl-s1">      titlesEnabled<span class="pl-k">:</span> <span class="pl-c1">true</span>, <span class="pl-c">// add titles</span></span>
+<span class="pl-s1">      titleBefore<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Before<span class="pl-pds">'</span></span>, <span class="pl-c">// title text for first image</span></span>
+<span class="pl-s1">      titleAfter<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>After<span class="pl-pds">'</span></span>, <span class="pl-c">// title text for second image</span></span>
+<span class="pl-s1">    });</span>
+<span class="pl-s1">  });</span>
+<span class="pl-s1">&lt;/<span class="pl-ent">script</span>&gt;</span></pre></div>
+
+<h2>
+<a id="support" class="anchor" href="#support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support:</h2>
+
+<ul>
+<li>IE8+</li>
+<li>Firefox</li>
+<li>Chrome</li>
+<li>Safari</li>
+<li>Android</li>
+<li>OS (iPhone, iPad)</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/nxeed/jQuery-Cross2">Jquery-cross2</a> is maintained by <a href="https://github.com/nxeed">nxeed</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
