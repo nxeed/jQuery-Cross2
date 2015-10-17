@@ -60,10 +60,10 @@ Default Options:
       value: 0.5, // initial slider position
       vertical: false, // use vartical orientation
       animationDuration: 150, // animation duration in mc
-      easing: 'swing', // extra easing function(http://easings.net)
+      easing: 'swing', // extra easing function(jquery.easing required)
       clickEnabled: false, // slide when click
       mousemoveEnabled: false, // slide when mouse track
-      mousewheelEnabled: false, // mousewheel scrolling
+      mousewheelEnabled: false, // mousewheel scrolling(jquery.mousewheel required)
       titlesEnabled: true, // show titles
       titleBefore: 'Before', // title text for first image
       titleAfter: 'After', // title text for second image
