@@ -10,11 +10,11 @@ The possibilities for this plugin are endless. Photographs can show the before a
 Features:
 -------------
 * Powerful customization
-* Mobile, IE8 supported
+* Mobile, IE8 support
 * Based on [event.drag](https://github.com/threedubmedia/jquery.threedubmedia/tree/master/event.drag)
 * Supports [mousewheel](https://github.com/jquery/jquery-mousewheel) and [easing](https://github.com/gdsmith/jquery.easing)
 * Focusable
-* Keyboard supported
+* Keyboard control supported
 
 Basic Usage:
 -------------
