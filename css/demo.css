@@ -1,0 +1,22 @@
+body {
+	font-size: 18px;
+	font-family: 'Roboto Condensed', serif;
+	font-weight: 300;
+	line-height: 28px;
+}
+
+.container {
+	max-width: 768px;
+}
+
+h1, h2 {
+	font-weight: 300;
+}
+
+@media (max-width: 991px) {
+ .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 2px;
+  }
+}
