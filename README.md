@@ -3,6 +3,10 @@ JQuery Cross2
 Just another jQuery Before/After Slider.
 
 The possibilities for this plugin are endless. Photographs can show the before and after differences between images, Doctors can have before and after images of patients, Modelers can show the before and after images of projects and on and on.
+
+[Demo page](http://nxeed.github.io/jQuery-Cross2/)
+-------------
+
 Features:
 -------------
 * Powerful customization
@@ -53,14 +57,14 @@ Default Options:
 <script>
   $(window).load(function() {
     $('.cross2').cross2({
-      value: 0.5, // initial slider offset
-      vertical: false, // vartical orientation
-      animationDuration: 150, // animation duration
-      easing: 'swing', // extra easing function
-      clickEnabled: false, // slide when clicks on image
-      mousemoveEnabled: false, // slide on mouse over
+      value: 0.5, // initial slider position
+      vertical: false, // use vartical orientation
+      animationDuration: 150, // animation duration in mc
+      easing: 'swing', // extra easing function(http://easings.net)
+      clickEnabled: false, // slide when click
+      mousemoveEnabled: false, // slide when mouse track
       mousewheelEnabled: false, // mousewheel scrolling
-      titlesEnabled: true, // add titles
+      titlesEnabled: true, // show titles
       titleBefore: 'Before', // title text for first image
       titleAfter: 'After', // title text for second image
     });
