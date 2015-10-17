@@ -21,8 +21,8 @@ Basic Usage:
 * Load the needed resources in the document.
 ``` html
 <link href="jquery.cross2.min.css" rel="stylesheet" />
-<script src="jquery.min.js"></script>
-<script src="jquery.event.drag.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
+<script src="jhttps://cdn.jsdelivr.net/jquery.event.drag/2.2/jquery.event.drag.min.js"></script>
 
 <!-- OPTIONAL -->
 <script src="https://cdn.jsdelivr.net/mousewheel/3.1.9/jquery.mousewheel.min.js"></script>
