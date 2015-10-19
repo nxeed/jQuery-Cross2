@@ -7,12 +7,13 @@ Just another jQuery based image diff tool for creating an animated, customizable
 
 Features:
 -------------
-* Custom text labels for before / after images.
 * Horizontal or vertical comparison slider.
+* Custom text labels for before / after images.
 * Based on [event.drag](https://github.com/threedubmedia/jquery.threedubmedia/tree/master/event.drag).
 * Supports [mousewheel](https://github.com/jquery/jquery-mousewheel) and [easing](https://github.com/gdsmith/jquery.easing).
 * Focusable.
 * Keyboard control supported.
+* Responsive
 
 Basic Usage:
 -------------
