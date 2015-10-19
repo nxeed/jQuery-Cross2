@@ -17,11 +17,11 @@ Features:
 
 Basic Usage:
 -------------
-* Add the required jQuery Cross2 plugin's stylesheet.
+* Include the required jQuery Cross2 plugin's stylesheet.
 ``` html
 <link href="/path/to/jquery.cross2.css" rel="stylesheet">
 ```
-* Add the jQuery Cross2 plugin's script and other required resources.
+* Include the jQuery Cross2 plugin's script and other required resources.
 ``` html
 <script src="/path/to/jquery.min.js"></script>
 <script src="/path/to/jquery.event.drag.min.js"></script>
