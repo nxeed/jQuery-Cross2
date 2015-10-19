@@ -9,11 +9,10 @@ Features:
 -------------
 * Custom text labels for before / after images.
 * Horizontal or vertical comparison slider.
-* Based on [event.drag](https://github.com/threedubmedia/jquery.threedubmedia/tree/master/event.drag)
-* Supports [mousewheel](https://github.com/jquery/jquery-mousewheel) and [easing](https://github.com/gdsmith/jquery.easing)
-* Focusable
-* Keyboard control supported
-* Allows to compare before / after images programmatically.
+* Based on [event.drag](https://github.com/threedubmedia/jquery.threedubmedia/tree/master/event.drag).
+* Supports [mousewheel](https://github.com/jquery/jquery-mousewheel) and [easing](https://github.com/gdsmith/jquery.easing).
+* Focusable.
+* Keyboard control supported.
 
 Basic Usage:
 -------------
