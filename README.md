@@ -81,4 +81,4 @@ Support:
 * Chrome
 * Safari
 * Android
-* OS (iPhone, iPad)
+* IOS (iPhone, iPad)
