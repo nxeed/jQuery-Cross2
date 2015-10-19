@@ -1,49 +1,53 @@
 JQuery Cross2
 ===================
-Just another jQuery Before/After Slider.
-
-The possibilities for this plugin are endless. Photographs can show the before and after differences between images, Doctors can have before and after images of patients, Modelers can show the before and after images of projects and on and on.
+Just another jQuery based image diff tool for creating an animated, customizable image comparison slider to view before and after images.
 
 [Demo page](http://nxeed.github.io/jQuery-Cross2/)
 -------------
 
 Features:
 -------------
-* Powerful customization
-* Mobile, IE8 support
+* Custom text labels for before / after images.
+* Horizontal or vertical comparison slider.
 * Based on [event.drag](https://github.com/threedubmedia/jquery.threedubmedia/tree/master/event.drag)
 * Supports [mousewheel](https://github.com/jquery/jquery-mousewheel) and [easing](https://github.com/gdsmith/jquery.easing)
 * Focusable
 * Keyboard control supported
+* Allows to compare before / after images programmatically.
 
 Basic Usage:
 -------------
-* Load the needed resources in the document.
+* Add the required jQuery Cross2 plugin's stylesheet to the head section of the web page.
 ``` html
-<link href="jquery.cross2.min.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
-<script src="jhttps://cdn.jsdelivr.net/jquery.event.drag/2.2/jquery.event.drag.min.js"></script>
-
-<!-- OPTIONAL -->
-<script src="https://cdn.jsdelivr.net/mousewheel/3.1.9/jquery.mousewheel.min.js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"></script>
-<!-- /OPTIONAL -->
-
-<script src="jquery.cross2.min.js"></script>
+link href="css/jquery.cross2.css" rel="stylesheet">
 ```
-* Wrap two images into a cross2 container.
+* Add the jQuery Cross2 plugin's script and other required resources at the bottom of the web page.
+``` html
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="/path/to/jquery.event.drag.min.js"></script>
+<script src="js/jquery.cross2.js"></script>
+```
+*  Include the OPTIONAL jQuery mousewheel plugin for mouse wheel support.
+``` html
+<script src="/path/to/jquery.mousewheel.js"></script>
+```
+*  Include the OPTIONAL jQuery easing plugin for additional easing effects.
+``` html
+<script src="/path/to/jquery.easing.min.js"></script>
+```
+* Insert before and after images you want to compare into a container like this:
 ``` html
 <div class="cross2">
-  <img src="imgBefore.jpg" alt="before" />
-  <img src="imgAfter.jpg" alt="after" />
+  <img src="1.jpg" alt="before" />
+  <img src="2.jpg" alt="after" />
 </div>
 <!-- OR -->
 <div class="cross2">
-  <a href="#" target="_blank"><img src="imgBefore.jpg" alt="before" /></a>
-  <a href="#" target="_blank"><img src="imgAfter.jpg" alt="after" /></a>
+  <a href="#"><img src="1.jpg" alt="before" /></a>
+  <a href="#"><img src="2.jpg" alt="after" /></a>
 </div>
 ```
-* Enable the plugin.
+*  Initialize the plugin.
 ``` html
 <script>
   $(window).load(function() {
@@ -58,15 +62,15 @@ Default Options:
   $(window).load(function() {
     $('.cross2').cross2({
       value: 0.5, // initial slider position
-      vertical: false, // use vartical orientation
+      vertical: false, // vertial or horizontal slider
       animationDuration: 150, // animation duration in mc
-      easing: 'swing', // extra easing function(jquery.easing required)
-      clickEnabled: false, // slide when click
-      mousemoveEnabled: false, // slide when mouse track
-      mousewheelEnabled: false, // mousewheel scrolling(jquery.mousewheel required)
-      titlesEnabled: true, // show titles
-      titleBefore: 'Before', // title text for first image
-      titleAfter: 'After', // title text for second image
+      easing: 'swing', // easing effect(requirs jQuery easing plugin)
+      clickEnabled: false, // compare images on click
+      mousemoveEnabled: false, // enable cursor drag
+      mousewheelEnabled: false, // enable mouse wheel(requirs jQuery mousewheel plugin)
+      titlesEnabled: true, // show before / after text labels
+      titleBefore: 'Before', // text label for before image
+      titleAfter: 'After', // text label for after image
     });
   });
 </script>
