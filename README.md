@@ -65,7 +65,7 @@ Default Options:
       animationDuration: 150, // animation duration in mc
       easing: 'swing', // easing effect(requirs jQuery easing plugin)
       clickEnabled: false, // compare images on click
-      mousemoveEnabled: false, // enable cursor drag
+      mousemoveEnabled: false, // compare images on mouse over
       mousewheelEnabled: false, // enable mouse wheel(requirs jQuery mousewheel plugin)
       titlesEnabled: true, // show before / after text labels
       titleBefore: 'Before', // text label for before image
