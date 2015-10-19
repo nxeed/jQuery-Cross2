@@ -18,7 +18,7 @@ Basic Usage:
 -------------
 * Add the required jQuery Cross2 plugin's stylesheet to the head section of the web page.
 ``` html
-link href="css/jquery.cross2.css" rel="stylesheet">
+<link href="css/jquery.cross2.css" rel="stylesheet">
 ```
 * Add the jQuery Cross2 plugin's script and other required resources at the bottom of the web page.
 ``` html
