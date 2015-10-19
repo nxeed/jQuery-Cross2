@@ -16,15 +16,15 @@ Features:
 
 Basic Usage:
 -------------
-* Add the required jQuery Cross2 plugin's stylesheet to the head section of the web page.
+* Add the required jQuery Cross2 plugin's stylesheet.
 ``` html
-<link href="css/jquery.cross2.css" rel="stylesheet">
+<link href="/path/to/jquery.cross2.css" rel="stylesheet">
 ```
-* Add the jQuery Cross2 plugin's script and other required resources at the bottom of the web page.
+* Add the jQuery Cross2 plugin's script and other required resources.
 ``` html
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="/path/to/jquery.min.js"></script>
 <script src="/path/to/jquery.event.drag.min.js"></script>
-<script src="js/jquery.cross2.js"></script>
+<script src="/path/to/jquery.cross2.js"></script>
 ```
 *  Include the OPTIONAL jQuery mousewheel plugin for mouse wheel support.
 ``` html
